@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cbz-deployment-app2
+  labels:
+    app: cbz-app2
+spec:
+  replicas: 3
+  revisionHistoryLimit: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: cbz-app2
+  template:
+    metadata:
+      labels:
+        app: cbz-app2
+    spec:
+      containers:
+      - name: cbz-app2
+        image: 692701344220.dkr.ecr.eu-west-3.amazonaws.com/cbz:v2
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
