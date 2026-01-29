@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-deployment
+  name: cbz-deployment
   labels:
-    app: vishu-app1
+    app: cbz-app1
 spec:
   replicas: 3
   revisionHistoryLimit: 5
@@ -14,14 +14,14 @@ spec:
       maxUnavailable: 0
   selector:
     matchLabels:
-      app: vishu-app1
+      app: cbz-app1
   template:
     metadata:
       labels:
-        app: vishu-app1
+        app: cbz-app1
     spec:
       containers:
-      - name: vishu-app1
+      - name: cbz-app1
         image: 692701344220.dkr.ecr.eu-west-3.amazonaws.com/cbz:v1
         imagePullPolicy: Always
         ports:
