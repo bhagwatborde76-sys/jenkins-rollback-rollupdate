@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vishu-app1-service
+  name: cbz-service
 spec:
   type: LoadBalancer
   selector:
-    app: vishu-app1
+    app: cbz-app1
   ports:
     - name: http
       port: 80
