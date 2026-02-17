@@ -175,33 +175,33 @@ EKS deployment using kubectl
 
 **Jenkins Pipeline Success**
 
-![Alt jenkins pipeline success](screenshots/image1.png)
+![Alt jenkins pipeline success](Screenshots/Image1.jpeg)
 
 
 **Amazon ECR Image**
 
-![Alt ECR image](screenshots/image2.png)
+![Alt ECR image](Screenshots/Image2.jpeg)
 
 
 **EKS Nodes & Pods**
 
-![Alt ECR image](screenshots/image3.png)
+![Alt ECR image](Screenshots/Image3.jpeg)
 
 **LoadBalancer External IP**
 
-![Alt LoadBalancer IP ](screenshots/image4.png)
+![Alt LoadBalancer IP ](Screenshots/Image4.jpeg)
 
 **Application Output in Browser**
 
-![Alt Output of application](screenshots/image5.png)
+![Alt Output of application](Screenshots/Image5.jpeg)
 
 **V2 image output in Browser**
 
-![Alt V2 image output](screenshots/image6.png)
+![Alt V2 image output](Screenshots/Image6.jpeg)
 
 **Rollback Output in Browser**
 
- ![Alt Rollback image](screenshots/image7.png)
+ ![Alt Rollback image](Screenshots/Image7.jpeg)
 
 🧾 Important AWS & Kubernetes Commands
 🔹 Create ECR Repository
